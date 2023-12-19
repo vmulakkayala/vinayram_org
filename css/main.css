@@ -209,7 +209,7 @@ span .tick-flip-card {
     text-indent: 0.25em;
 }
 .tick-label {
-	font-size: 1em;
+	font-size: 14px;
 	font-weight: bold;
 	font-family: "Courier New";
 	margin-top: 1em;
