@@ -1,0 +1,255 @@
+/*@import url("style.css?t=1670236580");*/
+:root {
+    --bg-header: #f6b80f; /*#f7f7f1;*/
+}
+
+html {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	position: absolute; /* For width to extend beyond viewport. Otherwise it doesn't */
+	min-width: 100%; /* For width to extend beyond viewport. Otherwise it doesn't */
+	height: 100%;
+	margin: 0;
+	font-family: "Courier New", Courier;
+	/* for firefox 
+	overflow: -moz-scrollbars-horizontal;
+	overflow-y: hidden;
+	overflow-x: auto;*/
+}
+
+.flexContainer {
+	height:100%;
+	width: 100%;
+	display: flex;
+    flex-flow: column;
+}
+
+.flexContainer .header {
+	position: relative;
+	flex: 0 1 auto;
+	min-width: 100%;
+	/*min-height: calc(100% - 100px);*/
+	padding-bottom: 50px;
+}
+
+.headerBG {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+    align-items: center;
+	background-color: var(--bg-header);
+}
+
+.colorBG {
+	min-height: 100%;
+	height: 100%;
+	width: 50%;
+	min-width: 530px;
+}
+
+.imageBG {
+	background: linear-gradient(to right, var(--bg-header), rgba(1, 1, 1, 0)), url('https://cdna.artstation.com/p/assets/images/images/068/515/766/large/vinay-mulakkayala-bulbs-wallpaper.jpg') no-repeat center;
+	background-size: cover;
+	height: 100%;
+	/*width: 50%;*/
+	flex-grow: 1;
+}
+
+.headerMain {
+	position:relative;
+	z-index: 1;
+	padding-left: 5vw;
+	padding-top: 5vh;
+	padding-right: 5vw;
+}
+
+.title {
+	font-size: 4em;
+	font-weight: normal;
+}
+
+.quote {
+	font-size: 1.1em;
+	font-weight: normal;
+	margin-left: 5px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+.leafTab {
+	height: 20px;
+	width: 200px;
+	background-color: #0184a0; /*#669900;*/
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	box-shadow: -10px 10px 20px 5px rgba(0.1,0.1,0.1,0.1);
+}
+
+.countdownBoxWrapper {
+	width: 70vw;
+	min-width: 550px;
+	padding-top: 30px;
+	background-color: #f2f2f2;
+	align-items: center;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-top-right-radius: 5px;
+	box-shadow: -10px 10px 20px 5px rgba(0.1,0.1,0.1,0.1);
+}
+
+.countdownCenter {
+	width: fit-content;
+	margin: 0 auto;
+}
+
+.countdownBox {
+	width: 550px;
+}
+
+.countdownNotes {
+	font-weight: normal;
+	font-size: 1em;
+	padding-top: 15px;
+	padding-left: 50px;
+	padding-bottom: 15px;
+}
+
+.flexContainer .content {
+	flex: 1 1 auto;
+	background-color: #0184a0; /*#f2f2f2;*/
+	align-items: center;
+}
+
+.contentInner {
+	padding-left: 5vw;
+	padding-right: 5vw;
+	padding-top: 5vh;
+	padding-bottom: 5vh;
+}
+
+.horizontalWrapper {
+	display: flex;
+	flex-direction: row;
+}
+
+.idea {
+	height: 40px;
+	width: 40px;
+	background: url('../images/bulb.webp') no-repeat center;
+	background-size: contain;
+	border-style: solid;
+	border-color:  #f6b80f; /*#f6b80f;*/
+	border-radius: 10px;
+	background-color: #f2f2f2;
+}
+
+.ideaTitle {
+	font-size: 2em;
+	font-weight: bold;
+	margin-left: 20px;
+	margin-top:6px;
+}
+
+.ideaText {
+	padding-top: 10px;
+	padding-left: 10px;
+	
+}
+
+.ideaText a {
+	text-decoration: none;
+	color: black;
+}
+
+.flexContainer .footer {
+	flex: 0 1 50px;
+	background-image: linear-gradient(#a5a7a5, #3a3a3a);
+}
+
+.footerText {
+	padding-left: 30px;
+	padding-top: 15px;
+	padding-top: 15px;
+	color: #e6e6e6;
+	text-shadow: 3px 3px 2px rgba(0.1,0.1,0.1,0.4);
+}
+
+/* START Countdown counter override */
+div .kedit.keditFullHeight {
+	min-height: 5vh;
+	padding: 0;
+}
+
+.tick {
+	font-weight: normal;
+	font-family: "Courier New";
+} 
+div.tick {
+	line-height: 1.4;
+}
+.tick-group {
+	margin: 0.5em;
+	text-align: center:
+}
+.tick-flip {
+	font-size: 2.5rem;
+}
+span .tick-flip-panel {
+    color: #edebeb;
+    background-color: #333232;
+}
+span .tick-flip-card {
+    border-radius: 0.125em;
+	letter-spacing: 0.25em;
+    text-indent: 0.25em;
+}
+.tick-label {
+	font-size: 1em;
+	font-weight: bold;
+	font-family: "Courier New";
+	margin-top: 1em;
+}
+/* unused for now
+span .tick-flip-front {
+    border-bottom-left-radius: 0em;
+    border-bottom-right-radius: 0em;
+}
+span .tick-flip-back {
+    border-top-left-radius: 0em;
+    border-top-right-radius: 0em;
+}
+span .tick-flip-panel-front {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 55%;
+}
+span .tick-flip-panel-back {
+    transform-origin: center top;
+    top: 50%;
+    z-index: 1;
+    box-shadow: inset 0 -1px rgba(0,0,0,.1);
+}
+span .tick-flip-panel-front-text {
+    position: absolute;
+    left: -1px;
+    top: 0.0em;
+    right: -1px;
+    height: 100%;
+    overflow: hidden;
+}
+span .tick-flip-panel-back-text {
+    position: absolute;
+    left: -1px;
+    top: 0.0em;
+    right: -1px;
+    height: 100%;
+    overflow: hidden;
+}
+*/
+/* END Countdown counter override */
