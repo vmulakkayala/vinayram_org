@@ -93,7 +93,7 @@ body {
 
 .countdownBoxWrapper {
 	width: 70vw;
-	min-width: 550px;
+	min-width: 700px;
 	padding-top: 30px;
 	background-color: #f2f2f2;
 	align-items: center;
@@ -105,7 +105,7 @@ body {
 
 .countdownCenter {
 	width: fit-content;
-	margin: 0 auto;
+
 }
 
 .countdownBox {
@@ -138,6 +138,19 @@ body {
 	flex-direction: row;
 }
 
+.centerInner {
+	justify-content: center;
+	padding-left: 25px;
+}
+
+.sticker {
+	height: 100px;
+	width: 100px;
+	background: url('../images/Sticker_Thumbnail.webp') no-repeat center;
+	background-size: contain;
+	margin-left: -50px;
+}
+
 .idea {
 	height: 40px;
 	width: 40px;
@@ -146,7 +159,7 @@ body {
 	border-style: solid;
 	border-color:  #f6b80f; /*#f6b80f;*/
 	border-radius: 10px;
-	background-color: #f2f2f2;
+	background-color: darkgreen;/*#f2f2f2;*/
 }
 
 .ideaTitle {
