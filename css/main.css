@@ -77,13 +77,12 @@ body {
 .quote {
 	font-size: 1.1em;
 	font-weight: normal;
-	margin-left: 5px;
-	margin-top: 10px;
-	margin-bottom: 5px;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 
 .leafTab {
-	height: 20px;
 	width: 200px;
 	background-color: var(--bg-comp); /*#0184a0; #669900;*/
 	border-top-left-radius: 5px;
